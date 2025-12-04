@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica XYZ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+
+ <script type="module" src="./js/main.js"></script>
+
+        <header>
+            <img src="img/logo.png" alt="foto de limeira">
+        </header>
+
+        <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-input"> 
+        <label for="toggle" class="toggle-label">Dark mode</label>
+    </div>
+
+        <section class="destaque">
+            <h1>Contato</h1>
+            <p>Formulario de contato.</p>
+        </section>
+
+
+        <section class="contato">
+            <div>
+                <form method="post" action="">
+                    <p>preencha os campos abaixo</p>
+
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" class="campo" required placeholder="Seu Nome">
+                    </div>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" class="campo" required placeholder="Seu Email">
+                    </div>
+
+
+                    <div>
+                        <label>Sexo:</label>
+                        <input type="radio" name="sexo" value="Masculino" required> Masculino
+                        <input type="radio" name="sexo" value="Feminino" required> Feminino
+                    </div>
+
+                    <div>
+                        <label>assunto</label>
+
+                        <select>
+                            <option>critica</option>
+                            <option>duvida</option>
+                            <option>sugestão</option>
+                            <option>elogio</option>
+                            <option>outro</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label>comentario:</label>
+                        <textarea class="campo" rows="6"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar dados" class="botao">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="voltar">
+            <a href="index.html">
+                <i class="bi bi-arrow-left-circle-fill">Voltar</i>
+            </a>
+        </section>
+
+        <footer>
+            &copy; 2025 - Clínica XYZ | Créditos
+        </footer>
+    </main>
+
+</body>
+
+</html>

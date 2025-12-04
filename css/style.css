@@ -1,0 +1,394 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins'; 
+}
+
+
+header {
+    padding: 10px;
+    background-color: #102Da1;
+    text-align: center;
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    max-width: 1200px;              /* largura */
+    margin: 0px auto 0px auto;      /* centralizar a página */
+    padding: 40px 20px;
+}
+.destaque{
+
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 60px;
+    p{
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        color: #555;
+    }
+}
+
+/* Grid principal na página index */
+.grid-home {
+    display: flex;
+    /* muda o padrão de bloco para flexível */
+    flex-wrap: wrap;
+    /* permite a "quebra de linha" */
+    gap: 20px;
+
+    /* Espaçamento entre cards */
+    * {
+        flex-basis: 270px;
+        /* Fixar a largura de cada coluna */
+        flex-grow: 1;
+        /* Permitir que ele expanda */
+        flex-shrink: 1;
+        /* Permitir que ele reduza */
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+}
+.card:hover {
+transform: translateY(-15px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.card {
+    background-color: white;
+    /* cor de fundo branco */
+    text-align: center;
+    /* Centralizar o texto */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* sombra */
+    /* eixo horizontal vertical e raio */
+    padding-bottom: 15px;
+    border-radius: 15px;
+    /* cantos arredondados */
+    overflow: hidden;
+    /* ocultar as partes que excedem a borda */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        font-size: .95rem;
+        padding: 10px;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    background-color: #102Da1;
+    color: aliceblue
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+
+.social {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+
+a i{
+    margin-right: 8px;  
+}
+
+    a {
+   display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white; /* aletra a cor do texto */
+    text-decoration: none; /* altera a decoração do texto ou link (tirando o sublinhado)*/
+    border-radius: 20px; /* arredonda os cantos */
+    font-weight: 500; /* deixa o texto em negrito */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+a:nth-child(1){
+    background-color: #3b5998; /* cor do facebook */
+}
+
+a:nth-child(2){
+    background-color: #ff0000; /*cor do youtube */
+}
+
+a:nth-child(3) {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); /* cor do instagram */
+}
+
+a:nth-child(4) {
+    background-color: #25d366; /* cor do whatsapp */
+}
+
+a:nth-child(5){
+    background-color: #000; /* cor do tiktok */
+}
+
+a:hover {
+    transform: translateY(-10px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+}
+
+.voltar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+   .grid-h {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        * {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 250px;
+
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: start;
+           margin-top: 0px;
+            margin-bottom: 15px;
+        }
+
+            p {
+font-size: 1rem;
+line-height: 100%;
+margin-bottom: 10px;
+            }
+        
+    }
+
+
+    .grid {
+    display: flex;
+    /* muda o padrão de bloco para flexível */
+    flex-wrap: wrap;
+    /* permite a "quebra de linha" */
+    gap: 20px;
+
+    /* Espaçamento entre cards */
+    div {
+        flex-basis: 25%;
+
+        flex-grow: 1;
+
+        flex-shrink: 1;
+        /* Fixar a largura de cada coluna */
+    }
+}
+
+    .tabela {
+        text-align: center;
+        border-collapse: collapse; /* tirar o espaçamento padrão entre as celulas */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tabela th {
+    text-align: center;
+    border-bottom: 3px solid #aaa;
+    padding: 8px;
+}
+
+.tabela td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* MODO DARK DA PAGINA */
+.dark-mode {
+background-color: #333;
+}
+
+.dark-mode div {
+    background-color: #102Da1;
+}
+
+.dark-mode h1, h2 {
+color : white
+
+}
+
+.dark-mode p {
+    color: rgb(177, 170, 170)
+}
+
+.dark-mode .toggle-container {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .contato  {
+color: rgb(177, 170, 170);
+
+    
+    label {
+        color: white
+    }
+
+    div {
+        background-color: #333;
+    }
+}
+
+.dark-mode .grid-h {
+    div {
+        background-color: #333;
+    }
+
+    li {
+        color : rgb(177, 170, 170);
+    }
+}
+
+.dark-mode .tabela {
+    th {
+    color: white;
+    }
+
+    td {
+        color: rgb(177, 170, 170);
+    }
+}
+
+.dark-mode .loc {
+   div {
+    background-color: #333;
+   }
+}
+
+   .dark-mode .voltar {
+    i {
+     color: white;
+   }
+}
+
+
+
+/**********************************/
+
+.toggle-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.toggle-container label {
+    display: inline!important;
+}
+
+@media screen and (max-width: 766px) {
+
+    .grid-home,
+    .grid-h,
+    .social,
+    .grid, 
+    .tabela {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    iframe {
+        width: 100%;
+    }
+
+    .social a {
+        width: 50%;
+    }
+
+    .social i {
+        text-align: center;
+    }
+
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=time],
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 30px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato {
+    display: flex;
+    gap: 1.5rem;
+
+    div {
+        flex-basis: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+}
+
+ iframe {
+        width: 100%;
+        border-radius: 10px;
+    }
